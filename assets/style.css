@@ -60,3 +60,11 @@ h1 em{font-style:normal;color:var(--brand);display:block}
 .foot{margin-top:clamp(3rem,8vw,5rem);padding-block:2rem 2.5rem;border-top:1px solid var(--line);color:var(--muted);font-size:.95rem;display:flex;flex-wrap:wrap;justify-content:space-between;gap:.5rem 2rem}
 .foot p{margin:0}
 .notfound{min-height:60vh}
+.tools{margin-top:clamp(2.5rem,6vw,3.5rem)}
+.grid-tools{grid-template-columns:1fr}
+@media (min-width:760px){
+  .card-wide{flex-direction:row}
+  .card-wide .thumb{flex:0 0 40%;aspect-ratio:16/10;border-bottom:0;border-inline-start:0;border-inline-end:1px solid var(--line)}
+  .card-wide .body{justify-content:center;padding:1.75rem 2rem}
+  .card-wide .url{margin-top:.75rem}
+}
